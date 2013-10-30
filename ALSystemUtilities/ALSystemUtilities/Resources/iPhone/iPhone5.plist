@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>standby</key>
+	<string>225</string>
+	<key>conversation3g</key>
+	<string>7</string>
+	<key>conversation2g</key>
+	<string>15</string>
+	<key>internet3g</key>
+	<string>8</string>
+	<key>internetwifi</key>
+	<string>10</string>
+	<key>video</key>
+	<string>10</string>
+	<key>audio</key>
+	<string>40</string>
+	<key>sim</key>
+	<string>Nano-SIM</string>
+	<key>dimensions</key>
+	<string>123.8 x 58.6 x 7.6 (mm)</string>
+	<key>weight</key>
+	<string>112 g.</string>
+	<key>display-type</key>
+	<string>LED IPS LCD</string>
+	<key>display-density</key>
+	<string>326 ppi</string>
+	<key>WLAN</key>
+	<string>Wi-Fi 802.11 a/b/g/n, dual-band</string>
+	<key>bluetooth</key>
+	<string>4.0</string>
+	<key>camera-primary</key>
+	<string>8.0 MP</string>
+	<key>camera-secondary</key>
+	<string>1.2 MP, 720p</string>
+	<key>cpu</key>
+	<string>Apple A6</string>
+	<key>gpu</key>
+	<string>PowerVR SGX 543MP3 (triple-core graphics)</string>
+	<key>siri</key>
+	<string>Yes</string>
+	<key>touch-id</key>
+	<string>No</string>
+</dict>
+</plist>

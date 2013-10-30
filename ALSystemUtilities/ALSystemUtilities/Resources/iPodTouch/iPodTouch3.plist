@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>audio</key>
+	<string>30</string>
+	<key>video</key>
+	<string>6</string>
+	<key>dimensions</key>
+	<string>110 x 61,8 x 8,5 (mm)</string>
+	<key>weight</key>
+	<string>115 g.</string>
+	<key>display-type</key>
+	<string>TFT capacitive touchscreen</string>
+	<key>display-density</key>
+	<string>330 ppi</string>
+	<key>WLAN</key>
+	<string>WiFi 802.11 b/g</string>
+	<key>bluetooth</key>
+	<string>2.1</string>
+	<key>camera-primary</key>
+	<string>No</string>
+	<key>camera-secondary</key>
+	<string>No</string>
+	<key>cpu</key>
+	<string>833 MHz Cortex-A8 (locked at 600)</string>
+	<key>gpu</key>
+	<string>PowerVR SGX 535</string>
+</dict>
+</plist>
