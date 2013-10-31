@@ -133,3 +133,5 @@ Now I'll explain you what informations are contained for every purview.
 So, there are 78 methods to get every kind of information!
 
 All methods are class methods, so you can use the syntax ```[ALCarrier carrierName]```. This make the use of the library very very simple!
+
+If you want to let me know if you use my library in your applications, you are free to send me an email to andrea.lufino@me.com :)
