@@ -96,7 +96,7 @@
 		87D8E4D51821577E00546E6D /* ALMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMemory.h; sourceTree = "<group>"; };
 		87D8E4D61821577E00546E6D /* ALMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMemory.m; sourceTree = "<group>"; };
 		87D8E4D81821577E00546E6D /* ALNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNetwork.h; sourceTree = "<group>"; };
-		87D8E4D91821577E00546E6D /* ALNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNetwork.m; sourceTree = "<group>"; };
+		87D8E4D91821577E00546E6D /* ALNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNetwork.m; sourceTree = "<group>"; wrapsLines = 0; };
 		87D8E4DB1821577E00546E6D /* ALProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALProcessor.h; sourceTree = "<group>"; };
 		87D8E4DC1821577E00546E6D /* ALProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALProcessor.m; sourceTree = "<group>"; };
 		87D8E4DD1821577E00546E6D /* ALSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSystem.h; sourceTree = "<group>"; };
