@@ -53,7 +53,7 @@
 }
 
 + (CGFloat)brightness {
-    return [[UIScreen mainScreen] brightness]*100;
+    return [[UIScreen mainScreen] brightness] * 100;
 }
 
 + (NSString *)platformType {

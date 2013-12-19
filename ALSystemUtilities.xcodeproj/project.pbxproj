@@ -13,6 +13,12 @@
 		8710CCA518227461009590EE /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9F18227461009590EE /* ExternalAccessory.framework */; };
 		8710CCA618227461009590EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CCA018227461009590EE /* Security.framework */; };
 		8710CCA718227461009590EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CCA118227461009590EE /* SystemConfiguration.framework */; };
+		87C3D0491861FAB1007E0142 /* iPad2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D0481861FAB1007E0142 /* iPad2.plist */; };
+		87C3D04B186204C9007E0142 /* iPad3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D04A186204C9007E0142 /* iPad3.plist */; };
+		87C3D04D186204D1007E0142 /* iPad4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D04C186204D1007E0142 /* iPad4.plist */; };
+		87C3D04F186204F0007E0142 /* iPadAir.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D04E186204F0007E0142 /* iPadAir.plist */; };
+		87C3D05118620776007E0142 /* iPadMini.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D05018620776007E0142 /* iPadMini.plist */; };
+		87C3D05318620783007E0142 /* iPadMiniRetina.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D05218620783007E0142 /* iPadMiniRetina.plist */; };
 		87D8E4AB182156D300546E6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87D8E4A9182156D300546E6D /* InfoPlist.strings */; };
 		87D8E4B8182156FB00546E6D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8E4B6182156FB00546E6D /* CoreFoundation.framework */; };
 		87D8E4B9182156FB00546E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8E4B7182156FB00546E6D /* Foundation.framework */; };
@@ -71,6 +77,12 @@
 		8710CC9F18227461009590EE /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		8710CCA018227461009590EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8710CCA118227461009590EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		87C3D0481861FAB1007E0142 /* iPad2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPad2.plist; path = iPad/iPad2.plist; sourceTree = "<group>"; };
+		87C3D04A186204C9007E0142 /* iPad3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPad3.plist; path = iPad/iPad3.plist; sourceTree = "<group>"; };
+		87C3D04C186204D1007E0142 /* iPad4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPad4.plist; path = iPad/iPad4.plist; sourceTree = "<group>"; };
+		87C3D04E186204F0007E0142 /* iPadAir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadAir.plist; path = iPad/iPadAir.plist; sourceTree = "<group>"; };
+		87C3D05018620776007E0142 /* iPadMini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadMini.plist; path = iPad/iPadMini.plist; sourceTree = "<group>"; };
+		87C3D05218620783007E0142 /* iPadMiniRetina.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadMiniRetina.plist; path = iPad/iPadMiniRetina.plist; sourceTree = "<group>"; };
 		87D8E4A4182156D300546E6D /* ALSystemUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALSystemUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D8E4A8182156D300546E6D /* ALSystemUtilities-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ALSystemUtilities-Info.plist"; sourceTree = "<group>"; };
 		87D8E4AA182156D300546E6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -146,6 +158,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87C3D0471861F400007E0142 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				87C3D0481861FAB1007E0142 /* iPad2.plist */,
+				87C3D04A186204C9007E0142 /* iPad3.plist */,
+				87C3D04C186204D1007E0142 /* iPad4.plist */,
+				87C3D04E186204F0007E0142 /* iPadAir.plist */,
+				87C3D05018620776007E0142 /* iPadMini.plist */,
+				87C3D05218620783007E0142 /* iPadMiniRetina.plist */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		87D8E499182156D300546E6D = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +349,7 @@
 		87D8E4EE1821577E00546E6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				87C3D0471861F400007E0142 /* iPad */,
 				87D8E4EF1821577E00546E6D /* iPhone */,
 				87D8E4F61821577E00546E6D /* iPodTouch */,
 			);
@@ -463,9 +489,15 @@
 				87D8E5231821577E00546E6D /* iPodTouch3.plist in Resources */,
 				87D8E5221821577E00546E6D /* iPhone5s.plist in Resources */,
 				87D8E5251821577E00546E6D /* iPodTouch5.plist in Resources */,
+				87C3D04F186204F0007E0142 /* iPadAir.plist in Resources */,
 				87D8E5201821577E00546E6D /* iPhone5.plist in Resources */,
+				87C3D04D186204D1007E0142 /* iPad4.plist in Resources */,
 				87D8E5241821577E00546E6D /* iPodTouch4.plist in Resources */,
 				87D8E5211821577E00546E6D /* iPhone5c.plist in Resources */,
+				87C3D05318620783007E0142 /* iPadMiniRetina.plist in Resources */,
+				87C3D04B186204C9007E0142 /* iPad3.plist in Resources */,
+				87C3D0491861FAB1007E0142 /* iPad2.plist in Resources */,
+				87C3D05118620776007E0142 /* iPadMini.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
