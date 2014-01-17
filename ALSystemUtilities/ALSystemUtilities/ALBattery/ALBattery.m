@@ -96,7 +96,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"conversation3g"]) {
         maxHours = [[info objectForKey:@"conversation3g"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; //get hours
@@ -113,7 +113,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"conversation2g"]) {
         maxHours = [[info objectForKey:@"conversation2g"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; //get hours
@@ -130,7 +130,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"internet3g"]) {
         maxHours = [[info objectForKey:@"internet3g"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; //get hours
@@ -147,7 +147,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"internetwifi"]) {
         maxHours = [[info objectForKey:@"internetwifi"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; //get hours
@@ -164,7 +164,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"video"]) {
         maxHours = [[info objectForKey:@"video"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; // get hours
@@ -181,7 +181,7 @@
     CGFloat batteryLevel = [self batteryLevel];
     NSDictionary *info = [self infoForDevice];
     NSInteger maxHours = 0;
-    if ([info objectForKey:@"standby"]) {
+    if ([info objectForKey:@"audio"]) {
         maxHours = [[info objectForKey:@"audio"] integerValue];
         CGFloat totMinutes = (maxHours - ((100 - batteryLevel) * maxHours / 100)) * 60; //remaining time in minutes
         NSInteger hours = totMinutes / 60; //get hours
