@@ -1,7 +1,7 @@
 ALSystemUtilities
 =================
 
-In order to use the framework you have to open the project in Xcode and then click on Product -> Archive and drag the .framework file into the project you want to import it.
+In order to use the framework you have to open the project in Xcode and then click on Product -> Archive and drag the .embeddedframework file into the project you want to import it.
 
 The project is built using the iOS Universal Framework template (Fake framework) by kstenerud (https://github.com/kstenerud/iOS-Universal-Framework?source=cc).
 
