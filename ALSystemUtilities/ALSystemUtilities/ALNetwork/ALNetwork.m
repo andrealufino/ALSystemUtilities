@@ -361,19 +361,15 @@
 
 + (NSString *)BSSID {
     /*! Get the interfaces */
-    NSArray *interfaces = (__bridge NSArray*) CNCopySupportedInterfaces();
+    NSArray *interfaces = (__bridge NSArray *) CNCopySupportedInterfaces();
     NSString *BSSID;
     
     /*! Cycle interfaces */
-    for (NSString* interface in interfaces)
+    for (NSString *interface in interfaces)
     {
         CFDictionaryRef networkDetails = CNCopyCurrentNetworkInfo((__bridge CFStringRef) interface);
         if (networkDetails)
         {
-//            NSLog(@"all details: %@", (__bridge NSDictionary *)networkDetails);
-//            NSLog(@"BSSID: %@", (NSString *)CFDictionaryGetValue (networkDetails, kCNNetworkInfoKeyBSSID));
-//            NSString *BSSID1 = (NSString *)CFDictionaryGetValue (networkDetails, kCNNetworkInfoKeyBSSID);
-//            BSSID = [[BSSID1 stringByReplacingOccurrencesOfString:@":" withString:@""] uppercaseString];
             BSSID = (NSString *)CFDictionaryGetValue(networkDetails, kCNNetworkInfoKeyBSSID);
             CFRelease(networkDetails);
         }
@@ -383,19 +379,15 @@
 
 + (NSString *)SSID {
     /*! Get the interfaces */
-    NSArray *interfaces = (__bridge NSArray*) CNCopySupportedInterfaces();
+    NSArray *interfaces = (__bridge NSArray *) CNCopySupportedInterfaces();
     NSString *SSID;
     
     /*! Cycle interfaces */
-    for (NSString* interface in interfaces)
+    for (NSString *interface in interfaces)
     {
         CFDictionaryRef networkDetails = CNCopyCurrentNetworkInfo((__bridge CFStringRef) interface);
         if (networkDetails)
         {
-//            NSLog(@"all details: %@", (__bridge NSDictionary *)networkDetails);
-//            NSLog(@"SSID: %@", (NSString *)CFDictionaryGetValue (networkDetails, kCNNetworkInfoKeySSID));
-//            NSString *SSID1 = (NSString *)CFDictionaryGetValue (networkDetails, kCNNetworkInfoKeySSID);
-//            SSID = [[SSID1 stringByReplacingOccurrencesOfString:@":" withString:@""] uppercaseString];
             SSID = (NSString *)CFDictionaryGetValue(networkDetails, kCNNetworkInfoKeySSID);
             CFRelease(networkDetails);
         }

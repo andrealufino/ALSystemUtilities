@@ -82,6 +82,8 @@
     [dictionary setObject:[ALNetwork cellIPAddress] forKey:ALNetwork_cellIPAddress];
     [dictionary setObject:[ALNetwork WiFiNetmaskAddress] forKey:ALNetwork_WiFiNetmaskAddress];
     [dictionary setObject:[ALNetwork WiFiBroadcastAddress] forKey:ALNetwork_WiFiBroadcastAddress];
+    [dictionary setObject:[ALNetwork BSSID] forKey:ALNetwork_BSSID];
+    [dictionary setObject:[ALNetwork SSID] forKey:ALNetwork_SSID];
     // Processor
     [dictionary setObject:[NSNumber numberWithInteger:[ALProcessor processorsNumber]] forKey:ALProcessor_processorsNumber];
     [dictionary setObject:[NSNumber numberWithInteger:[ALProcessor activeProcessorsNumber]] forKey:ALProcessor_activeProcessorsNumber];
@@ -208,6 +210,8 @@
     [dictionary setObject:[ALNetwork cellIPAddress] forKey:ALNetwork_cellIPAddress];
     [dictionary setObject:[ALNetwork WiFiNetmaskAddress] forKey:ALNetwork_WiFiNetmaskAddress];
     [dictionary setObject:[ALNetwork WiFiBroadcastAddress] forKey:ALNetwork_WiFiBroadcastAddress];
+    [dictionary setObject:[ALNetwork BSSID] forKey:ALNetwork_BSSID];
+    [dictionary setObject:[ALNetwork SSID] forKey:ALNetwork_SSID];
     return dictionary;
 }
 
