@@ -61,4 +61,10 @@
     return usedSpace;
 }
 
+/*! WORK IN PROGRESS */
++ (CGFloat)numberOfNodes {
+    long long numberOfNodes = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemNodes] longLongValue];
+    return numberOfNodes;
+}
+
 @end
