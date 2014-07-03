@@ -109,6 +109,8 @@ Now I'll explain you what informations are contained for every purview.
 - ```+ (NSString *)cellIPAddress;```
 - ```+ (NSString *)WiFiNetmaskAddress;```
 - ```+ (NSString *)WiFiBroadcastAddress;```
+- ```+ (NSString *)BSSID;```
+- ```+ (NSString *)SSID;```
 
 *Processor*
 
