@@ -20,9 +20,7 @@
 /*!
  * This class provide methods to get current IP address and check WiFi or 3G connection
  */
-@interface ALNetwork : NSObject <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
-
-+ (ALNetwork *)sharedInstance;
+@interface ALNetwork : NSObject
 
 /*!
  Get the current IP address

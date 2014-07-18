@@ -93,6 +93,7 @@
         return NO;
 }
 
+/*! Obsolete in iOS 7 */
 + (NSString *)macAddress {
     int                 mgmtInfoBase[6];
     char                *msgBuffer = NULL;
