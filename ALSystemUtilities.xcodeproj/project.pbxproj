@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		870C1AD2196594B400369031 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870C1AD1196594B400369031 /* AssetsLibrary.framework */; };
 		8710CCA218227461009590EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9C18227461009590EE /* AudioToolbox.framework */; };
 		8710CCA318227461009590EE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9D18227461009590EE /* CFNetwork.framework */; };
 		8710CCA418227461009590EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9E18227461009590EE /* CoreTelephony.framework */; };
@@ -144,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870C1AD2196594B400369031 /* AssetsLibrary.framework in Frameworks */,
 				8710CCA218227461009590EE /* AudioToolbox.framework in Frameworks */,
 				8710CCA318227461009590EE /* CFNetwork.framework in Frameworks */,
 				8710CCA418227461009590EE /* CoreTelephony.framework in Frameworks */,
