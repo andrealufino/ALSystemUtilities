@@ -5,6 +5,12 @@ In order to use the framework you have to open the project in Xcode and then cli
 
 The project is built using the iOS Universal Framework template (Fake framework) by kstenerud (https://github.com/kstenerud/iOS-Universal-Framework?source=cc).
 
+CocoaPods
+=================
+You can install the library via cocoapods.
+Use :
+pod 'ALSystemUtilities'
+
 Overview
 =================
 
