@@ -7,6 +7,8 @@
 //
 
 #import "ALBattery.h"
+#import <sys/utsname.h>
+#import "ALHardware.h"
 
 @interface ALBattery ()
 
@@ -87,7 +89,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -104,7 +106,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -121,7 +123,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -138,7 +140,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -155,7 +157,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -172,7 +174,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }
@@ -189,7 +191,7 @@
         if (hours < 0 || minutes < 0) {
             return [NSString stringWithFormat:@"ND"];
         }
-        return [NSString stringWithFormat:@"%i:%02i",hours,minutes];
+        return [NSString stringWithFormat:@"%li:%02li",(long)hours,(long)minutes];
     } else
         return @"NS";
 }

@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <mach/mach.h>
-#import <mach/mach_host.h>
 
 /*!
  * This class provides some informations about the memory of the device

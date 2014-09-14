@@ -19,6 +19,8 @@
 		87C3D04F186204F0007E0142 /* iPadAir.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D04E186204F0007E0142 /* iPadAir.plist */; };
 		87C3D05118620776007E0142 /* iPadMini.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D05018620776007E0142 /* iPadMini.plist */; };
 		87C3D05318620783007E0142 /* iPadMiniRetina.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C3D05218620783007E0142 /* iPadMiniRetina.plist */; };
+		87D350B519C61EAA0081F612 /* iPhone6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D350B419C61EAA0081F612 /* iPhone6.plist */; };
+		87D350B719C6208C0081F612 /* iPhone6Plus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D350B619C6208C0081F612 /* iPhone6Plus.plist */; };
 		87D8E4AB182156D300546E6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87D8E4A9182156D300546E6D /* InfoPlist.strings */; };
 		87D8E4B8182156FB00546E6D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8E4B6182156FB00546E6D /* CoreFoundation.framework */; };
 		87D8E4B9182156FB00546E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8E4B7182156FB00546E6D /* Foundation.framework */; };
@@ -84,6 +86,8 @@
 		87C3D04E186204F0007E0142 /* iPadAir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadAir.plist; path = iPad/iPadAir.plist; sourceTree = "<group>"; };
 		87C3D05018620776007E0142 /* iPadMini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadMini.plist; path = iPad/iPadMini.plist; sourceTree = "<group>"; };
 		87C3D05218620783007E0142 /* iPadMiniRetina.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = iPadMiniRetina.plist; path = iPad/iPadMiniRetina.plist; sourceTree = "<group>"; };
+		87D350B419C61EAA0081F612 /* iPhone6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6.plist; sourceTree = "<group>"; };
+		87D350B619C6208C0081F612 /* iPhone6Plus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iPhone6Plus.plist; sourceTree = "<group>"; };
 		87D8E4A4182156D300546E6D /* ALSystemUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALSystemUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D8E4A8182156D300546E6D /* ALSystemUtilities-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ALSystemUtilities-Info.plist"; sourceTree = "<group>"; };
 		87D8E4AA182156D300546E6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -366,6 +370,8 @@
 				87D8E4F31821577E00546E6D /* iPhone5.plist */,
 				87D8E4F41821577E00546E6D /* iPhone5c.plist */,
 				87D8E4F51821577E00546E6D /* iPhone5s.plist */,
+				87D350B419C61EAA0081F612 /* iPhone6.plist */,
+				87D350B619C6208C0081F612 /* iPhone6Plus.plist */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -484,9 +490,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D350B519C61EAA0081F612 /* iPhone6.plist in Resources */,
 				87D8E4AB182156D300546E6D /* InfoPlist.strings in Resources */,
 				87D8E51D1821577E00546E6D /* iPhone3Gs.plist in Resources */,
 				87D8E51F1821577E00546E6D /* iPhone4s.plist in Resources */,
+				87D350B719C6208C0081F612 /* iPhone6Plus.plist in Resources */,
 				87D8E51E1821577E00546E6D /* iPhone4.plist in Resources */,
 				87D8E5231821577E00546E6D /* iPodTouch3.plist in Resources */,
 				87D8E5221821577E00546E6D /* iPhone5s.plist in Resources */,
@@ -628,10 +636,6 @@
 		87D8E4B3182156D300546E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -654,10 +658,6 @@
 		87D8E4B4182156D300546E6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;

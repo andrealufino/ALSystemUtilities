@@ -7,6 +7,15 @@
 //
 
 #import "ALNetwork.h"
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+#import "Reachability.h"
+#include <sys/socket.h>
+#include <sys/sysctl.h>
+#include <net/if.h>
+#include <net/if_dl.h>
+#include <sys/ioctl.h>
 
 @implementation ALNetwork
 

@@ -7,6 +7,8 @@
 //
 
 #import "ALJailbreak.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 @implementation ALJailbreak
 

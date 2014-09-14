@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreTelephony/CTTelephonyNetworkInfo.h>
-#import <CoreTelephony/CTCarrier.h>
 
 /*!
  * This class provides method to get info about the carrier

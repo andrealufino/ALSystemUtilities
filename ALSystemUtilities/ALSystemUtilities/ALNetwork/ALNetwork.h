@@ -7,15 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SystemConfiguration/CaptiveNetwork.h>
-#import <ifaddrs.h>
-#import <arpa/inet.h>
-#import "Reachability.h"
-#include <sys/socket.h>
-#include <sys/sysctl.h>
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <sys/ioctl.h>
 
 /*!
  * This class provide methods to get current IP address and check WiFi or 3G connection

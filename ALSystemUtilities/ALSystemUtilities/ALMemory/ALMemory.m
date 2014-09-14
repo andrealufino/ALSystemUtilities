@@ -7,6 +7,8 @@
 //
 
 #import "ALMemory.h"
+#import <mach/mach.h>
+#import <mach/mach_host.h>
 
 @implementation ALMemory
 

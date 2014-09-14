@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <mach/mach.h>
-#import <sys/sysctl.h>
 
 /*!
  * This class provide informations about processors

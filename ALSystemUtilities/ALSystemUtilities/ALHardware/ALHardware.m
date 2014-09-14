@@ -7,6 +7,9 @@
 //
 
 #import "ALHardware.h"
+#include <sys/utsname.h>
+#include <sys/types.h>
+#include <sys/sysctl.h>
 
 #define MIB_SIZE 2
 
@@ -90,6 +93,8 @@
         [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone5,3"]   ||
         [result isEqualToString:@"iPhone5,4"])      type = @"iPhone 5c";
+    if ([result isEqualToString:@"iPhone7,2"])      type = @"iPhone 6";
+    if ([result isEqualToString:@"iPhone7,1"])      type = @"iPhone 6 Plus";
     
     return type;
 }
@@ -99,7 +104,7 @@
     NSInteger seconds = ti % 60;
     NSInteger minutes = (ti / 60) % 60;
     NSInteger hours = (ti / 3600);
-    return [NSString stringWithFormat:@"%02i:%02i:%02i", hours, minutes, seconds];
+    return [NSString stringWithFormat:@"%02li:%02li:%02li", (long)hours, (long)minutes, (long)seconds];
 }
 
 + (BOOL)proximitySensor {

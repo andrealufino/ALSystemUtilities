@@ -7,6 +7,8 @@
 //
 
 #import "ALProcessor.h"
+#import <mach/mach.h>
+#import <sys/sysctl.h>
 
 @implementation ALProcessor
 
