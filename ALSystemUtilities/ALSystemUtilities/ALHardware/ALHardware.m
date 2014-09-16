@@ -73,28 +73,40 @@
     if ([result isEqualToString:@"iPhone4,1"])      type = @"iPhone 4s";
     if ([result isEqualToString:@"iPhone5,1"]   ||
         [result isEqualToString:@"iPhone5,2"])      type = @"iPhone 5";
-    if ([result isEqualToString:@"iPad2,1"]     ||
-        [result isEqualToString:@"iPad2,2"]     ||
-        [result isEqualToString:@"iPad2,3"])        type = @"iPad 2";
-    if ([result isEqualToString:@"iPad3,1"]     ||
-        [result isEqualToString:@"iPad3,2"]     ||
-        [result isEqualToString:@"iPad3,3"])        type = @"iPad 3";
-    if ([result isEqualToString:@"iPad3,4"]     ||
-        [result isEqualToString:@"iPad3,5"]     ||
-        [result isEqualToString:@"iPad3,6"])         type = @"iPad 4";
-    if ([result isEqualToString:@"iPad4,1"]     ||
-        [result isEqualToString:@"iPad4,2"])         type = @"iPad Air";
-    if ([result isEqualToString:@"iPad2,5"]     ||
-        [result isEqualToString:@"iPad2,6"]     ||
-        [result isEqualToString:@"iPad2,7"])        type = @"iPad Mini";
-    if ([result isEqualToString:@"iPad4,4"]     ||
-        [result isEqualToString:@"iPad4,5"])        type = @"iPad Mini Retina";
-    if ([result isEqualToString:@"iPhone6,1"]   ||
-        [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone5,3"]   ||
         [result isEqualToString:@"iPhone5,4"])      type = @"iPhone 5c";
+    if ([result isEqualToString:@"iPhone6,1"]   ||
+        [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone7,2"])      type = @"iPhone 6";
     if ([result isEqualToString:@"iPhone7,1"])      type = @"iPhone 6 Plus";
+    
+    if ([result isEqualToString:@"iPad2,1"])        type = @"iPad 2 (WiFi)";
+    if ([result isEqualToString:@"iPad2,2"])        type = @"iPad 2 (GSM)";
+    if ([result isEqualToString:@"iPad2,3"])        type = @"iPad 2 (CDMA)";
+    if ([result isEqualToString:@"iPad2,4"])        type = @"iPad 2 (WiFi) Mid 2012";
+    
+    
+    if ([result isEqualToString:@"iPad2,5"])        type = @"iPad Mini (WiFi)";
+    if ([result isEqualToString:@"iPad2,6"])        type = @"iPad Mini (LTE)";
+    if ([result isEqualToString:@"iPad2,7"])        type = @"iPad Mini (LTE+CDMA)";
+    
+    
+    if ([result isEqualToString:@"iPad3,1"])        type = @"iPad 3 (WiFi)";
+    if ([result isEqualToString:@"iPad3,2"])        type = @"iPad 3 (LTE+CDMA)";
+    if ([result isEqualToString:@"iPad3,3"])        type = @"iPad 3 (LTE)";
+    
+    if ([result isEqualToString:@"iPad3,4"])        type = @"iPad 4 (WiFi)";
+    if ([result isEqualToString:@"iPad3,5"])        type = @"iPad 4 (LTE)";
+    if ([result isEqualToString:@"iPad3,6"])        type = @"iPad 4 (LTE+CDMA)";
+    
+    
+    if ([result isEqualToString:@"iPad4,1"])        type = @"iPad Air (WiFi)";
+    if ([result isEqualToString:@"iPad4,2"])        type = @"iPad Air (LTE)";
+    if ([result isEqualToString:@"iPad4,4"])        type = @"iPad Mini Retina (WiFi)";
+    if ([result isEqualToString:@"iPad4,5"])        type = @"iPad Mini Retina (LTE)";
+
+    if ([result isEqualToString:@"i386"]     ||
+        [result isEqualToString:@"x86_64"])        type = @"Simulator";
     
     return type;
 }
