@@ -127,12 +127,12 @@
         // Create a UIDevice variable
         UIDevice *device = [UIDevice currentDevice];
         // Turn the sensor on, if not already on, and see if it works
-        if (device.proximityMonitoringEnabled != YES) {
+        if (!device.proximityMonitoringEnabled) {
             // Sensor is off
             // Turn it on
             [device setProximityMonitoringEnabled:YES];
             // See if it turned on
-            if (device.proximityMonitoringEnabled == YES) {
+            if (device.proximityMonitoringEnabled) {
                 // It turned on!  Turn it off
                 [device setProximityMonitoringEnabled:NO];
                 // It works
