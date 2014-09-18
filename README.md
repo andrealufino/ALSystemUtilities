@@ -3,6 +3,20 @@ ALSystemUtilities
 
 In order to use the framework you have to open the project in Xcode and then click on Product -> Archive and drag the .embeddedframework file into the project you want to import it.
 
+When import the .embeddedframework, don't forget to import these frameworks to your project if they're not imported :
+
+- AssetsLibrary.framework;
+- AudioToolbox.framework;
+- CFNetwork.framework;
+- CoreTelephony.framework;
+- ExternalAccessory.framework;
+- Security.framework;
+- SystemConfiguration.framework;
+- UIKit.framework;
+- CoreGraphics.framework;
+- CoreFoundation.framework;
+- Foundation.framework;
+
 The project is built using the iOS Universal Framework template (Fake framework) by kstenerud (https://github.com/kstenerud/iOS-Universal-Framework?source=cc).
 
 CocoaPods
