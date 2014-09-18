@@ -28,8 +28,6 @@ pod 'ALSystemUtilities'
 Overview
 =================
 
-*You can implement the code to free the memory with the ALSystemUtilities framework. This is the gist URL : https://gist.github.com/andrealufino/7888447*
-
 The library provides informations for these purviews :
 
 - battery;
