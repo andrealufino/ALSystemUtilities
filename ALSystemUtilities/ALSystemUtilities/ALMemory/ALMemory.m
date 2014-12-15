@@ -14,7 +14,7 @@
 
 + (NSInteger)totalMemory {
     NSInteger nearest = 256;
-    NSInteger totalMemory = [[NSProcessInfo processInfo] physicalMemory] / 1024 / 1024;
+    NSInteger totalMemory = (NSInteger)([[NSProcessInfo processInfo] physicalMemory] / 1024 / 1024);
     NSInteger rem = totalMemory % nearest;
     NSInteger tot = totalMemory - rem;
     if (rem >= nearest/2) {
