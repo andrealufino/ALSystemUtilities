@@ -84,6 +84,8 @@
         [result isEqualToString:@"iPad3,6"])         type = @"iPad 4";
     if ([result isEqualToString:@"iPad4,1"]     ||
         [result isEqualToString:@"iPad4,2"])         type = @"iPad Air";
+    if ([result isEqualToString:@"iPad5,3"]     ||
+        [result isEqualToString:@"iPad5,4"])         type = @"iPad Air 2";
     if ([result isEqualToString:@"iPad2,5"]     ||
         [result isEqualToString:@"iPad2,6"]     ||
         [result isEqualToString:@"iPad2,7"])        type = @"iPad Mini";
