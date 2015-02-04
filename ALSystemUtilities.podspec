@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
         :file => 'LICENSE'
     }
   s.homepage     = 'https://github.com/andrealufino/ALSystemUtilities'
-  s.author            = {
+  s.author       = {
         'Andrea Lufino' => 'andrea.lufino@me.com'
     }
   s.summary      = 'Get every kind of info about your device'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 # Source Info
   s.platform     =  :ios, '6.1'
   s.source            = {
-        :git => 'https://github.com/andrealufino/ALSystemUtilities.git',
+        :git => 'https://github.com/GorkaMM/ALSystemUtilities.git',
         :tag => 'v1.0'
     }
   s.source_files = 'ALSystemUtilities/ALSystemUtilities/**/*.{h,m}'
