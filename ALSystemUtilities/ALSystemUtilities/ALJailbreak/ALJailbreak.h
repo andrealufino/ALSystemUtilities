@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 /*!
  * This class detects if the device is jailbroken. The class check the presence or less of the Cydia.app

@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <sys/utsname.h>
-#include <sys/types.h>
-#include <sys/sysctl.h>
 
 /*!
  * This class check some hardware (and software) informations

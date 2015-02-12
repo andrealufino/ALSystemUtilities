@@ -7,36 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ifaddrs.h>
-#import <arpa/inet.h>
-#import "Reachability.h"
-#include <sys/socket.h>
-#include <sys/sysctl.h>
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <sys/ioctl.h>
-
-@protocol ALNetworkDelegate <NSObject>
-
-/*!
- Called when the connection speed test has finished
- @param  downloadSpeedInKbPerSeconds NSString value which represents the speed connection
- */
-- (void)downloadSpeedTestFinished:(NSString *)downloadSpeedInKbPerSeconds;
-
-@end
 
 /*!
  * This class provide methods to get current IP address and check WiFi or 3G connection
  */
-@interface ALNetwork : NSObject <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
-
-/*!
- * The delegate of the object
- */
-@property id <ALNetworkDelegate> delegate;
-
-+ (ALNetwork *)sharedInstance;
+@interface ALNetwork : NSObject
 
 /*!
  Get the current IP address
@@ -63,11 +38,6 @@
 + (NSString *)macAddress;
 
 /*!
- Start the test for the speed of the connection
- */
-- (void)downloadSpeedInKbPerSec;
-
-/*!
  * The external IP Address
  @return NSString represents the external IP address
  */
@@ -90,5 +60,17 @@
  @return NSString represents the WiFi broadcast address
  */
 + (NSString *)WiFiBroadcastAddress;
+
+/*!
+ The BSSID of the network
+ @return NSString represents the BSSID value
+ */
++ (NSString *)BSSID;
+
+/*!
+ The SSID of the network
+ @return NSString represents the SSID value
+ */
++ (NSString *)SSID;
 
 @end

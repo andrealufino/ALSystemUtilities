@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>standby</key>
+	<string>720</string>
+	<key>audio</key>
+	<string>10</string>
+	<key>video</key>
+	<string>10</string>
+	<key>dimensions</key>
+	<string>200 x 134.7 x 7.2 (mm)</string>
+	<key>weight</key>
+	<string>308 g.</string>
+	<key>display-type</key>
+	<string>LED-backlit IPS LCD, capacitive touchscreen</string>
+	<key>display-density</key>
+	<string>162 ppi</string>
+	<key>WLAN</key>
+	<string>WiFi 802.11 a/b/g/n</string>
+	<key>bluetooth</key>
+	<string>4.0</string>
+	<key>camera-primary</key>
+	<string>5 MP</string>
+	<key>camera-secondary</key>
+	<string>1.2 MP</string>
+	<key>cpu</key>
+	<string>Apple A5</string>
+	<key>gpu</key>
+	<string>PowerVR SGX543MP2</string>
+	<key>siri</key>
+	<string>Yes</string>
+	<key>touch-id</key>
+	<string>No</string>
+	<key>sim</key>
+	<string>Nano-SIM</string>
+</dict>
+</plist>

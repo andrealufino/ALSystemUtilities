@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <sys/utsname.h>
-#import "ALHardware.h"
 
 /*!
  * This class is useful to retrieve informations about the battery status

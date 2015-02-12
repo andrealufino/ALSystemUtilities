@@ -14,3 +14,5 @@ static NSString *const ALNetwork_externalIPAddress = @"externalIPAddress";
 static NSString *const ALNetwork_cellIPAddress = @"cellIPAddress";
 static NSString *const ALNetwork_WiFiNetmaskAddress = @"WiFiNetmaskAddress";
 static NSString *const ALNetwork_WiFiBroadcastAddress = @"WiFiBroadcastAddress";
+static NSString *const ALNetwork_BSSID = @"BSSID";
+static NSString *const ALNetwork_SSID = @"SSID";

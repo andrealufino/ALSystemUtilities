@@ -7,6 +7,9 @@
 //
 
 #import "ALHardware.h"
+#include <sys/utsname.h>
+#include <sys/types.h>
+#include <sys/sysctl.h>
 
 #define MIB_SIZE 2
 
@@ -53,7 +56,7 @@
 }
 
 + (CGFloat)brightness {
-    return [[UIScreen mainScreen] brightness]*100;
+    return [[UIScreen mainScreen] brightness] * 100;
 }
 
 + (NSString *)platformType {
@@ -79,13 +82,21 @@
     if ([result isEqualToString:@"iPad3,4"]     ||
         [result isEqualToString:@"iPad3,5"]     ||
         [result isEqualToString:@"iPad3,6"])         type = @"iPad 4";
+    if ([result isEqualToString:@"iPad4,1"]     ||
+        [result isEqualToString:@"iPad4,2"])         type = @"iPad Air";
+    if ([result isEqualToString:@"iPad5,3"]     ||
+        [result isEqualToString:@"iPad5,4"])         type = @"iPad Air 2";
     if ([result isEqualToString:@"iPad2,5"]     ||
         [result isEqualToString:@"iPad2,6"]     ||
         [result isEqualToString:@"iPad2,7"])        type = @"iPad Mini";
+    if ([result isEqualToString:@"iPad4,4"]     ||
+        [result isEqualToString:@"iPad4,5"])        type = @"iPad Mini Retina";
     if ([result isEqualToString:@"iPhone6,1"]   ||
         [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone5,3"]   ||
         [result isEqualToString:@"iPhone5,4"])      type = @"iPhone 5c";
+    if ([result isEqualToString:@"iPhone7,2"])      type = @"iPhone 6";
+    if ([result isEqualToString:@"iPhone7,1"])      type = @"iPhone 6 Plus";
     
     return type;
 }
@@ -95,7 +106,7 @@
     NSInteger seconds = ti % 60;
     NSInteger minutes = (ti / 60) % 60;
     NSInteger hours = (ti / 3600);
-    return [NSString stringWithFormat:@"%02i:%02i:%02i", hours, minutes, seconds];
+    return [NSString stringWithFormat:@"%02li:%02li:%02li", (long)hours, (long)minutes, (long)seconds];
 }
 
 + (BOOL)proximitySensor {

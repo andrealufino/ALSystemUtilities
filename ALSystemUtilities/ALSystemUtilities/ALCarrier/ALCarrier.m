@@ -7,6 +7,8 @@
 //
 
 #import "ALCarrier.h"
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 
 @implementation ALCarrier
 
