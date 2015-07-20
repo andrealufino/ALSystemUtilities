@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = 'ALSystemUtilities'
-  s.version      = '1.1'
+  s.version      = '1.3'
   s.license      = {
         :type => 'MIT',
         :file => 'LICENSE'
     }
   s.homepage     = 'https://github.com/andrealufino/ALSystemUtilities'
-  s.author       = {
+  s.author            = {
         'Andrea Lufino' => 'andrea.lufino@me.com'
     }
   s.summary      = 'Get every kind of info about your device'
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
 # Source Info
   s.platform     =  :ios, '6.1'
   s.source            = {
-        :git => 'https://github.com/GorkaMM/ALSystemUtilities.git',
-        :tag => 'v1.1'
+        :git => 'https://github.com/andrealufino/ALSystemUtilities.git',
+        :tag => 'v1.0'
     }
   s.source_files = 'ALSystemUtilities/ALSystemUtilities/**/*.{h,m}'
   s.requires_arc = true

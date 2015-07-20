@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506F33A1B52F49F006A13A2 /* ALSystemUtilities.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6506F3391B52F49F006A13A2 /* ALSystemUtilities.podspec */; };
+		65F481101B5D4A990051FFD8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 65F4810F1B5D4A990051FFD8 /* LICENSE */; };
 		8710CCA218227461009590EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9C18227461009590EE /* AudioToolbox.framework */; };
 		8710CCA318227461009590EE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9D18227461009590EE /* CFNetwork.framework */; };
 		8710CCA418227461009590EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710CC9E18227461009590EE /* CoreTelephony.framework */; };
@@ -73,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6506F3391B52F49F006A13A2 /* ALSystemUtilities.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALSystemUtilities.podspec; sourceTree = SOURCE_ROOT; };
+		65F4810F1B5D4A990051FFD8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		870C1AD1196594B400369031 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8710CC9C18227461009590EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8710CC9D18227461009590EE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -196,6 +200,8 @@
 		87D8E4A6182156D300546E6D /* ALSystemUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				6506F3391B52F49F006A13A2 /* ALSystemUtilities.podspec */,
+				65F4810F1B5D4A990051FFD8 /* LICENSE */,
 				87D8E4BE1821577E00546E6D /* ALSystemUtilities */,
 				87D8E4A7182156D300546E6D /* Supporting Files */,
 			);
@@ -499,10 +505,12 @@
 				87D8E5231821577E00546E6D /* iPodTouch3.plist in Resources */,
 				87D8E5221821577E00546E6D /* iPhone5s.plist in Resources */,
 				87D8E5251821577E00546E6D /* iPodTouch5.plist in Resources */,
+				6506F33A1B52F49F006A13A2 /* ALSystemUtilities.podspec in Resources */,
 				87C3D04F186204F0007E0142 /* iPadAir.plist in Resources */,
 				87D8E5201821577E00546E6D /* iPhone5.plist in Resources */,
 				87C3D04D186204D1007E0142 /* iPad4.plist in Resources */,
 				87D8E5241821577E00546E6D /* iPodTouch4.plist in Resources */,
+				65F481101B5D4A990051FFD8 /* LICENSE in Resources */,
 				87D8E5211821577E00546E6D /* iPhone5c.plist in Resources */,
 				87C3D05318620783007E0142 /* iPadMiniRetina.plist in Resources */,
 				87C3D04B186204C9007E0142 /* iPad3.plist in Resources */,
