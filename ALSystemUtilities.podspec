@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ALSystemUtilities'
-  s.version      = '1.3.2'
+  s.version      = '1.3.3'
   s.license      = {
         :type => 'MIT',
         :file => 'LICENSE'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     =  :ios, '6.1'
   s.source            = {
         :git => 'https://github.com/andrealufino/ALSystemUtilities.git',
-        :tag => 'v1.3.2'
+        :tag => '1.3.3'
     }
   s.source_files = 'ALSystemUtilities/ALSystemUtilities/**/*.{h,m}'
   s.requires_arc = true
