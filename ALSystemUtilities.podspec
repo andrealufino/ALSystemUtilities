@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     =  :ios, '6.1'
   s.source            = {
         :git => 'https://github.com/andrealufino/ALSystemUtilities.git',
-        :tag => 'v1.0'
+        :tag => 'v1.3'
     }
   s.source_files = 'ALSystemUtilities/ALSystemUtilities/**/*.{h,m}'
   s.requires_arc = true
