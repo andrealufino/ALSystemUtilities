@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ALSystemUtilities'
-  s.version      = '1.3.3'
+  s.version      = '1.3.4'
   s.license      = {
         :type => 'MIT',
         :file => 'LICENSE'
@@ -15,10 +15,12 @@ Pod::Spec.new do |s|
   s.platform     =  :ios, '6.1'
   s.source            = {
         :git => 'https://github.com/andrealufino/ALSystemUtilities.git',
-        :tag => '1.3.3'
+        :tag => '1.3.4'
     }
   s.source_files = 'ALSystemUtilities/ALSystemUtilities/**/*.{h,m}'
   s.requires_arc = true
+  s.resources = 'ALSystemUtilities/ALSystemUtilities/Resources/**/*.{plist}'
+
   s.frameworks    =  'AudioToolbox','CFNetwork','CoreTelephony','ExternalAccessory','Security','SystemConfiguration','CoreGraphics','CoreFoundation','Foundation'
   
   non_arc_files = 'ALSystemUtilities/ALSystemUtilities/Reachability/Reachability.h','ALSystemUtilities/ALSystemUtilities/Reachability/Reachability.m'

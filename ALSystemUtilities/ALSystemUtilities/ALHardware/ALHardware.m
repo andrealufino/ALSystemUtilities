@@ -98,6 +98,16 @@
     if ([result isEqualToString:@"iPhone7,2"])      type = @"iPhone 6";
     if ([result isEqualToString:@"iPhone7,1"])      type = @"iPhone 6 Plus";
     
+    if (!type) {
+        NSInteger index = MAX([result rangeOfString:@"iPhone"].length, [result rangeOfString:@"iPad"].length);
+        if (index == 0) {
+            index = [result rangeOfString:@"iPod"].length;
+        }
+        if (index > 0) {
+            type = [result substringToIndex:index];
+        }
+    }
+    
     return type;
 }
 
