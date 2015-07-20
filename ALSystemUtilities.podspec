@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ALSystemUtilities'
-  s.version      = '1.0'
+  s.version      = '1.3'
   s.license      = {
         :type => 'MIT',
         :file => 'LICENSE'
