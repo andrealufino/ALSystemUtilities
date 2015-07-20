@@ -11,7 +11,7 @@
 @implementation ALAccessory
 
 + (BOOL)accessoriesPluggedIn {
-    int accessoryCount = [[[EAAccessoryManager sharedAccessoryManager] connectedAccessories] count];
+    NSInteger accessoryCount = [[[EAAccessoryManager sharedAccessoryManager] connectedAccessories] count];
     if (accessoryCount > 0)
         return YES;
     else

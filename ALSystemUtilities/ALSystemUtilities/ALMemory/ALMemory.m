@@ -13,16 +13,14 @@
 @implementation ALMemory
 
 + (NSInteger)totalMemory {
-    int nearest = 256;
-    int totalMemory = [[NSProcessInfo processInfo] physicalMemory] / 1024 / 1024;
-    int rem = (int)totalMemory % nearest;
-    int tot = 0;
+    NSInteger nearest = 256;
+    NSInteger totalMemory = (NSInteger)([[NSProcessInfo processInfo] physicalMemory] / 1024 / 1024);
+    NSInteger rem = totalMemory % nearest;
+    NSInteger tot = totalMemory - rem;
     if (rem >= nearest/2) {
-        tot = ((int)totalMemory - rem)+256;
-    } else {
-        tot = ((int)totalMemory - rem);
+        tot += 256;
     }
-    
+  
     return tot;
 }
 
