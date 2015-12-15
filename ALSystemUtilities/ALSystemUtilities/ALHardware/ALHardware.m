@@ -75,7 +75,8 @@
         [result isEqualToString:@"iPhone5,2"])      type = @"iPhone 5";
     if ([result isEqualToString:@"iPad2,1"]     ||
         [result isEqualToString:@"iPad2,2"]     ||
-        [result isEqualToString:@"iPad2,3"])        type = @"iPad 2";
+        [result isEqualToString:@"iPad2,3"]     ||
+        [result isEqualToString:@"iPad2,4"])        type = @"iPad 2";
     if ([result isEqualToString:@"iPad3,1"]     ||
         [result isEqualToString:@"iPad3,2"]     ||
         [result isEqualToString:@"iPad3,3"])        type = @"iPad 3";
@@ -83,21 +84,32 @@
         [result isEqualToString:@"iPad3,5"]     ||
         [result isEqualToString:@"iPad3,6"])         type = @"iPad 4";
     if ([result isEqualToString:@"iPad4,1"]     ||
-        [result isEqualToString:@"iPad4,2"])         type = @"iPad Air";
+        [result isEqualToString:@"iPad4,2"]     ||
+        [result isEqualToString:@"iPad4,3"])         type = @"iPad Air";
     if ([result isEqualToString:@"iPad5,3"]     ||
         [result isEqualToString:@"iPad5,4"])         type = @"iPad Air 2";
     if ([result isEqualToString:@"iPad2,5"]     ||
         [result isEqualToString:@"iPad2,6"]     ||
         [result isEqualToString:@"iPad2,7"])        type = @"iPad Mini";
     if ([result isEqualToString:@"iPad4,4"]     ||
-        [result isEqualToString:@"iPad4,5"])        type = @"iPad Mini Retina";
+        [result isEqualToString:@"iPad4,5"]     ||
+        [result isEqualToString:@"iPad4,6"])        type = @"iPad Mini 2";
+    if ([result isEqualToString:@"iPad4,7"]     ||
+        [result isEqualToString:@"iPad4,8"]     ||
+        [result isEqualToString:@"iPad4,9"])        type = @"iPad Mini 3";
+    if ([result isEqualToString:@"iPad5,1"]     ||
+        [result isEqualToString:@"iPad5,2"])        type = @"iPad Mini 4";
+    if ([result isEqualToString:@"iPad6,7"]     ||
+        [result isEqualToString:@"iPad6,8"])        type = @"iPad Pro";
     if ([result isEqualToString:@"iPhone6,1"]   ||
         [result isEqualToString:@"iPhone6,2"])      type = @"iPhone 5s";
     if ([result isEqualToString:@"iPhone5,3"]   ||
         [result isEqualToString:@"iPhone5,4"])      type = @"iPhone 5c";
     if ([result isEqualToString:@"iPhone7,2"])      type = @"iPhone 6";
     if ([result isEqualToString:@"iPhone7,1"])      type = @"iPhone 6 Plus";
-    
+    if ([result isEqualToString:@"iPhone8,1"])      type = @"iPhone 6s";
+    if ([result isEqualToString:@"iPhone8,2"])      type = @"iPhone 6s Plus";
+  
     if (!type) {
         NSInteger index = MAX([result rangeOfString:@"iPhone"].length, [result rangeOfString:@"iPad"].length);
         if (index == 0) {
