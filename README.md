@@ -1,5 +1,8 @@
-ALSystemUtilities
-=================
+#IMPORTANT
+
+This repository is no longer maintained, but now there is a new library which inherit a lot from ALSystemUtilities and is [Luminous](https://github.com/andrealufino/Luminous) which is written in Swift 3 and actively maintained.
+
+#ALSystemUtilities
 
 In order to use the framework you have to open the project in Xcode and then click on Product -> Archive and drag the .embeddedframework file into the project you want to import it.
 
