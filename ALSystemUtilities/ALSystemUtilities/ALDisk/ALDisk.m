@@ -1,70 +1,107 @@
-//
-//  ALDisk.m
-//  ALSystem
-//
-//  Created by Andrea Mario Lufino on 19/07/13.
-//  Copyright (c) 2013 Andrea Mario Lufino. All rights reserved.
-//
+/********* HardwareInfo.m Cordova Plugin Implementation *******/
 
-#import "ALDisk.h"
+#import <Cordova/CDV.h>
+#import <mach/mach.h>
+#import <mach/mach_host.h>
 
-#define MB (1024*1024)
-#define GB (MB*1024)
+@interface HardwareInfo : CDVPlugin {
+  // Member variables go here.
+}
 
-@implementation ALDisk
+- (void)coolMethod:(CDVInvokedUrlCommand*)command;
+- (void)CPUInfo:(CDVInvokedUrlCommand*)command;
+- (void)RAMInfo:(CDVInvokedUrlCommand*)command;
+- (void)DeviceInfo:(CDVInvokedUrlCommand*)command;
+@end
 
-#pragma mark - Formatter
+@implementation HardwareInfo
 
-+ (NSString *)memoryFormatter:(long long)diskSpace {
-    NSString *formatted;
-    double bytes = 1.0 * diskSpace;
-    double megabytes = bytes / MB;
-    double gigabytes = bytes / GB;
-    if (gigabytes >= 1.0)
-        formatted = [NSString stringWithFormat:@"%.2f GB", gigabytes];
-    else if (megabytes >= 1.0)
-        formatted = [NSString stringWithFormat:@"%.2f MB", megabytes];
-    else
-        formatted = [NSString stringWithFormat:@"%.2f bytes", bytes];
+- (void)coolMethod:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    NSString* echo = [command.arguments objectAtIndex:0];
+  
+
+    if (echo != nil && [echo length] > 0) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+    }
+
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+- (void)CPUInfo:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    NSString* echo = [command.arguments objectAtIndex:0];
+
+    if (echo != nil && [echo length] > 0) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+    }
+
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+- (void)RAMInfo:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    uint64_t totalSpace = 0;
+    uint64_t totalFreeSpace = 0;
+    long physicalMemoryvalue = [[NSProcessInfo processInfo] physicalMemory];
+    NSString *rammemory = [NSString stringWithFormat:@"%ld", physicalMemoryvalue];
+    __autoreleasing NSError *error = nil;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
     
-    return formatted;
+    NSString *totalstorage;
+    NSString *totalfreestorage;
+    
+    if (dictionary) {
+        NSNumber *fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
+        NSNumber *freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
+        totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
+        totalFreeSpace = [freeFileSystemSizeInBytes unsignedLongLongValue];
+        totalstorage = [NSString stringWithFormat:@"%llu", ((totalSpace/1024ll)/1024ll)];
+        totalfreestorage = [NSString stringWithFormat:@"%llu", ((totalFreeSpace/1024ll)/1024ll)];
+        
+    }
+    else {
+        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %ld", [error domain], (long)[error code]);
+    }
+    
+    
+    NSDictionary *firstJsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                         totalfreestorage, @"totalfreestorage",
+                                         totalstorage, @"totalstorage",
+                                         rammemory, @"ramtotal",
+                                         nil];
+    
+    NSMutableArray * arr = [[NSMutableArray alloc] init];
+    
+    [arr addObject:firstJsonDictionary];
+   
+    NSData *jsonData2 = [NSJSONSerialization dataWithJSONObject:arr options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData2 encoding:NSUTF8StringEncoding];
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsonString];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-#pragma mark - Methods
+- (void)DeviceInfo:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    NSString* echo = [command.arguments objectAtIndex:0];
 
-+ (NSString *)totalDiskSpace {
-    long long space = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemSize] longLongValue];
-    return [self memoryFormatter:space];
-}
+    if (echo != nil && [echo length] > 0) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+    }
 
-+ (NSString *)freeDiskSpace {
-    long long freeSpace = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemFreeSize] longLongValue];
-    return [self memoryFormatter:freeSpace];
-}
-
-+ (NSString *)usedDiskSpace {
-    return [self memoryFormatter:[self usedDiskSpaceInBytes]];
-}
-
-+ (CGFloat)totalDiskSpaceInBytes {
-    long long space = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemSize] longLongValue];
-    return space;
-}
-
-+ (CGFloat)freeDiskSpaceInBytes {
-    long long freeSpace = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemFreeSize] longLongValue];
-    return freeSpace;
-}
-
-+ (CGFloat)usedDiskSpaceInBytes {
-    long long usedSpace = [self totalDiskSpaceInBytes] - [self freeDiskSpaceInBytes];
-    return usedSpace;
-}
-
-/*! WORK IN PROGRESS */
-+ (CGFloat)numberOfNodes {
-    long long numberOfNodes = [[[[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil] objectForKey:NSFileSystemNodes] longLongValue];
-    return numberOfNodes;
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 @end
